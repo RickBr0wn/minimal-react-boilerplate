@@ -1,1 +1,0 @@
-# minimal-react-boilerplate
