@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Development Server</h1>
-        <h3>Port: 9000</h3>
+        <h2>Port: 9000</h2>
         <br />
         <div className={count > 8 ? 'warning' : null}>Count: {count}</div>
         <button
