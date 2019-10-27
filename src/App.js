@@ -11,7 +11,7 @@ class App extends React.Component {
         <h1>Development Server</h1>
         <h3>Port: 9000</h3>
         <br />
-        <h2>Count {this.state.count}</h2>
+        <div>Count: {this.state.count}</div>
         <button
           onClick={() =>
             this.setState(prevState => ({ count: prevState.count + 1 }))
