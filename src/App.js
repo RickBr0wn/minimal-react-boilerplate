@@ -1,9 +1,31 @@
 import React from 'react'
 
 class App extends React.Component {
+  state = {
+    count: 0
+  }
+
   render() {
-    debugger
-    return <h1>Hello World - from the dev server</h1>
+    return (
+      <div>
+        <h1>Development Server</h1>
+        <h3>Port: 9000</h3>
+        <br />
+        <h2>Count {this.state.count}</h2>
+        <button
+          onClick={() =>
+            this.setState(prevState => ({ count: prevState.count + 1 }))
+          }>
+          +
+        </button>
+        <button
+          onClick={() =>
+            this.setState(prevState => ({ count: prevState.count - 1 }))
+          }>
+          -
+        </button>
+      </div>
+    )
   }
 }
 
