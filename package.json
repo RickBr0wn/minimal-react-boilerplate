@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --open --config webpack.config.dev.js",
-    "dev:hot": "webpack-dev-server --open --hot --config webpack.config.dev.js",
+    "dev": "webpack-dev-server --open --hot --config webpack.config.dev.js",
+    "dev:hot": "npm run dev --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rick Brown <ricky.brown.00@gmail.com> (https://github.com/RickBr0wn/minimal-react-boilerplate)",
