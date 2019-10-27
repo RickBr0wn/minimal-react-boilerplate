@@ -4,5 +4,13 @@ import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 import App from './App'
 import './styles.css'
+import DefaultErrorBoundary from './DefaultErrorBoundary'
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  <React.StrictMode>
+    <DefaultErrorBoundary>
+      <App />
+    </DefaultErrorBoundary>
+  </React.StrictMode>,
+  document.getElementById('app')
+)
