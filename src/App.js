@@ -19,13 +19,15 @@ class App extends React.Component {
         <button
           onClick={() =>
             this.setState(prevState => ({ count: prevState.count + 1 }))
-          }>
+          }
+        >
           +
         </button>
         <button
           onClick={() =>
             this.setState(prevState => ({ count: prevState.count - 1 }))
-          }>
+          }
+        >
           -
         </button>
         {count > 10 ? (
