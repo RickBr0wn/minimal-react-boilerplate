@@ -24,6 +24,7 @@ module.exports = {
                   'not < 2%',
                   'not ie 11'
                 ],
+                corejs: '3.3.4',
                 useBuiltIns: 'entry'
               }
             ],
