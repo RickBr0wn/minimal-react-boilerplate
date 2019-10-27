@@ -11,7 +11,11 @@
       "version": "16.11.0"
     }
   },
-  "extends": ["standard", "plugin:react/recommended"],
+  "extends": [
+    "standard",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -23,7 +27,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "jsx-a11y"],
   "rules": {
     "space-before-function-paren": [
       "error",

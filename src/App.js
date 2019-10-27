@@ -30,6 +30,7 @@ class App extends React.Component {
         >
           -
         </button>
+        <img src="./logo.png" alt="test" />
         {count > 10 ? (
           <React.Suspense fallback={null}>
             <Warning />
